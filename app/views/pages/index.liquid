@@ -73,7 +73,10 @@ published: true
           <h2>{{ page.title }}</h2>
           {% block 'main' %}
               Coming Soon.
+              {% assign photo = "temppeliaukio.jpg" | theme_image_url %}
+              {% include 'img_box' with photo, caption: "Temppeliaukio Church, Helsinki", size: "1000x300#" %}
           {% endblock %}
+          {% include 'footer' %}
         </div>
       </div>
     </div>
